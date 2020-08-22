@@ -1,9 +1,10 @@
 # start from a Node.js 10 (LTS) Image
 FROM clojure:openjdk-8-lein
 
+# create working directlry
 WORKDIR /usr/src/app
 
-# copy package files and install dependencies
+# copy package files, get libraries, build uberjar
 COPY src ./
 COPY project.clj ./
 RUN lein uberjar
