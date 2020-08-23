@@ -1,5 +1,5 @@
 # start from a Node.js 10 (LTS) Image
-FROM clojure:openjdk-8-lein
+FROM clojure:openjdk-15-lein
 
 # create working directlry
 WORKDIR /usr/src/app
